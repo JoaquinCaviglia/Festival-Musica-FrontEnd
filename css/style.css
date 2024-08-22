@@ -1,0 +1,510 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --azul: #0097A7;
+    --gris: #757575;
+    --background: #21292d;
+
+}
+body{
+    font-family: "Krub", sans-serif;
+    
+    background-color: var(--background);  
+}
+.navegacion h2{
+    color: var(--blanco);
+    margin-left: 20px;
+}
+.sombra{
+    -webkit-box-shadow: 0px 5px 47px 0px rgba(112,112,112,0.55);
+    -moz-box-shadow: 0px 5px 47px 0px rgba(112,112,112,0.55);
+    box-shadow: 0px 5px 47px 0px rgba(112,112,112,0.55);
+    background-color: var(--gris);
+    padding: 30px;
+}
+
+span, h3{
+    text-align: center;
+    outline: none ;
+}
+
+/* Header*/
+.hero .contenido-hero .titulo-principal{
+    color: var(--blanco);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+}
+
+.navegacion{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacion .navegacion-principal{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.navegacion .navegacion-principal a{
+    text-decoration: none;
+    color: var(--blanco);
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.navegacion .navegacion-principal a:hover {
+    background-color: var(--gris);   
+}
+
+.navegacion .navegacion-principal #activo{
+    background-color:var(--blanco) ;
+    color: var(--white);
+    padding: 0 10px;
+    border-radius: 5px;
+}
+.banner-header{
+    background-image: url(/img/movistarArena.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.hero {
+    
+    height: 685px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.contenedor-header{
+    background-color: rgba(0,0,0, .7);
+}
+.contenido-hero {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero #span-titulo{
+    color: var(--azul);
+    font-family: "GuthenAlt";
+    font-weight: 400;
+}
+
+.boton{
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 10px 30px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contenido-hero .ubicacion {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.contenido-hero .ubicacion p {
+    color: var(--blanco);
+}
+
+
+/*festival*/
+.info-festival{
+    margin: 40px 100px;
+    padding: 10px;
+}
+
+
+.txt h3{
+    text-align: center;
+    font-size: 34px;
+    line-height: 10px;
+    margin: 40px 0px;
+    text-transform: uppercase;
+   
+}
+
+.info-festival .banner-festival .box-festival .img-festival {
+    width: 120px;
+    height: 90px;
+    border-radius: 10%;
+}
+
+.info-festival .banner-festival .festival-boxes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info-festival .banner-festival .festival-boxes .box-festival{
+    margin: 30px;
+    display: flex;
+}
+
+.box-festival h5{
+    font-size: 20px;
+    padding: 0px 20px;
+    
+}
+.box-festival p{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.box-festival .figure-festival{
+    display: flex;
+    align-items: center;
+}
+
+
+/* Grilla */
+
+.artistas-boxes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+    padding: 50px;
+    
+}
+
+
+
+.img-artistas{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.banner-participantes {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: var(--oscuro);
+
+}
+
+.banner-participantes h2{
+    text-align: center;
+    font-size: 70px;
+    color: var(--blanco);
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.banner-participantes .artistas-boxes .box-artista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 300px;
+    width: 200px;
+    -webkit-box-shadow: 0px 5px 47px 0px rgba(112,112,112,0.55);
+    -moz-box-shadow: 0px 5px 47px 0px rgba(112,112,112,0.55);
+    box-shadow: 0px 5px 10px 0px rgba(112,112,112,0.55);
+}
+.banner-participantes .artistas-boxes .box-artista h5{
+    padding: 20px;
+    font-size: 20px;
+    color: var(--blanco);
+}
+.banner-participantes .artistas-boxes .box-artista p{
+    color: var(--blanco);
+    text-align: center;
+}
+
+.banner-participantes .artistas-boxes .box-artista .arreglo{
+    padding: 30px 20px;
+}
+.banner-participantes .boton{
+    margin: 80px;
+}
+
+/*Ubicacion*/
+
+#grid-ubicacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 195px 195px 195px;
+    gap: 5px;
+    place-content: center;
+    margin: 70px 30px;
+    color: var(--blanco);
+}
+.grid-ubicacion-section{
+    background-color: var(--oscuro);
+    padding: 20px;
+    margin: 50px 0px;
+}
+
+#grid-ubicacion figure:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+#grid-ubicacion figure:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#grid-ubicacion figure:nth-child(3) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+#grid-ubicacion article:nth-child(4) {
+    grid-column: 4/6;
+    grid-row: 1/2;
+}
+
+#grid-ubicacion article:nth-child(5) {
+    grid-column: 1/2;
+    grid-row: 3/span 4;
+}
+#grid-ubicacion figure:nth-child(6) {
+    grid-column: 3/5;
+    grid-row: 2/4;
+}
+
+#grid-ubicacion figure:nth-child(7) {
+    grid-column: 5/6;
+    grid-row: 2/4;
+}
+
+#grid-ubicacion figure:nth-child(8) {
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+.img-ubicacion{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.boton-grilla{
+    background-color: var(--gris);
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+#grid-ubicacion article h4{
+    padding: 5px;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+#grid-ubicacion article p{
+    padding: 10px;
+}
+
+#grid-ubicacion article a{
+    margin: 10px;
+}
+
+
+/* tabla*/
+
+#banner-tabla{
+    margin: auto;
+    padding: 30px;
+    
+}
+#tabla h3{
+    padding: 40px;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+#tabla-prestaciones{
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    color: var(--blanco);
+    background-color: #001d21;
+    border: var(--oscuro)
+}
+
+#tabla-titulo th:nth-child(1), tfoot td:nth-child(1){
+    background-color: #3f3f3f;
+}
+#tabla-titulo th:nth-child(2), tfoot td:nth-child(2){
+    background-color: #1b1b1b;
+}
+#tabla-titulo th:nth-child(3), tfoot td:nth-child(3){
+    background-color: #131313;
+}
+#tabla-prestaciones th{
+    padding: 10px;
+}
+#tabla-prestaciones ,tr ,td{
+    padding: 5px;
+}
+td{
+    height: 40px;
+}
+thead , tfoot{
+    height: 70px;
+    font-weight: bold;
+}
+
+
+/*form-Subscription*/
+
+#form-subscription{
+    box-sizing: border-box;
+    color: white;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+#contenido-subscription{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    box-shadow: 0 0 20px 0 rgba(255,255,255, 0.3);
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+#contenido-subscription > *{
+    padding: 10px;
+}
+
+.subscription{
+    background-color: #222222;
+}
+
+.subscription form .box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.subscription form div:nth-child(3){
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.subscription form div:nth-child(4){
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.subscription form div:nth-child(5){
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+.subscription form div{
+    margin: 0;
+    padding: 20px;
+}
+.contact-benefit{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-benefit > *{
+    padding: 20px;
+}
+
+.subscription form .inputs{
+    width: 100%;
+    padding: 10px;
+    background: none;
+    outline: none;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #0097A7;
+}
+.subscription form .contenido-terminos #boton-suscribirse{
+    background-color: #0097A7;
+    border: 0;
+    text-transform: uppercase;
+    padding: 15px;
+    color: black;
+    margin-left: 20px;
+}
+.subscription form div #boton-suscribirse:hover,
+.subscription form div #boton-suscribirse:focus{
+    background-color: #24bacb;
+    color: var(--blanco);
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.subscription form .aux label,
+.subscription form .aux input{
+    margin-left: 20px;
+}
+
+.contact-benefit h4,
+.contact-benefit ul{
+    text-align: center;
+}
+
+.contact-benefit ul li{
+    padding: 5px;
+    list-style: none;
+}
+
+
+
+
+#logo-movistar{
+    width: 70px;
+}
+
+.contenedor-footer{
+    display: flex;
+    padding: 30px 60px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+}
+
+.contenedor-footer p{
+    color: white;
+}
+
+#back-to-top{
+    font-size: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgb(179, 161, 161);
+    padding: 10px;
+    border-radius: 100px;
+    text-decoration: none;
+    opacity: 50%;
+    width: 30px;
+}
+
+#back-to-top:hover{
+    background-color: white;
+}
